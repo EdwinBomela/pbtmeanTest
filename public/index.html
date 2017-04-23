@@ -2,25 +2,31 @@
 <html>
 
   <head>
-    <title>NodeJS Starter Application</title>
+    <title>PBT Portal</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 
-  <body>
+  <body ng-app="myapp">
     <table>
       <tr>
         <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
+          <img class = "newappIcon" src="images/newapp-icon.png" alt="new app icon">
         </td>
         <td>
-          <h1 id="message">Hello World!</h1>
+          <h1 id="message">Home Page</h1>
           <p class='description'></p> Thanks for creating a <span class = "blue">NodeJS Starter Application</span>.
+          <h1>Hello Mean</h1>
+          <hr />
+          Test angular: 2+3= {{ 2+3 }}<br />
+          Type your name <input ng-model="name">Hello {{ name }}</input>
         </td>
       </tr>
     </table>
+    <script type="text/javascript" src="/js/lib/angular.min.js"></script>
+    <script type="text/javascript" src="/js/meanplus.js"></script>
   </body>
 
 </html>
